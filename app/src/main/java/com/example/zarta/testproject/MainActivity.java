@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void visitUrl(View view) {
         String url = "http://dailypakistani.com/";
-        Intent sharingIntent = new Intent(Intent.ACTION_SEND, Uri.parse(url));
+        Intent sharingIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
         startActivity(sharingIntent);
     }
 }
