@@ -25,4 +25,13 @@
         android:onClick="shareData"
         android:text="Calling an intent" />
 
+    <Button
+        android:id="@+id/visitUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/inputforintent"
+        android:layout_below="@+id/inputforintent"
+        android:onClick="visitUrl"
+        android:text="Visit Url" />
+
 </RelativeLayout >

@@ -1,6 +1,7 @@
 package com.example.zarta.testproject;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -46,6 +47,12 @@ public class MainActivity extends AppCompatActivity {
         Intent sharingIntent = new Intent(Intent.ACTION_SEND);
         sharingIntent.setType("text/plain");
         sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, "REPLACE WITH YOUR TEXT");
+        startActivity(sharingIntent);
+    }
+
+    public void visitUrl(View view) {
+        String url = "http://dailypakistani.com/";
+        Intent sharingIntent = new Intent(Intent.ACTION_SEND, Uri.parse(url));
         startActivity(sharingIntent);
     }
 }
